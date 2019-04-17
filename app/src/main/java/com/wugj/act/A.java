@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 
 /**
  * description:
@@ -22,6 +23,10 @@ public class A  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.e(tag,"onCreate");
+
+    }
+
+    public void startB(View v){
         startActivity(new Intent(A.this,B.class));
     }
 
